@@ -3,13 +3,12 @@ html{
     min-width:1080px;
     min-height:600px;
 }
+/* 常规浅色模式下的网页背景颜色及文本颜色 */
 body{
-    /* background-color:#eef4f9; */
-    /* background-color: black; */
-    background-image: url(https://pic1.zhimg.com/80/v2-e3dcab4a32594c810f766221dea7e970_1440w.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    /* background-color:#eef4f9; 
+    background-color: black; */
+    
+    background-color:rgb(238,244,249);
     font-family:HarmonyOS_Sans_SC;
     color:#414141;
     transition:all 0.5s cubic-bezier(0,1,0,1);
@@ -20,6 +19,17 @@ body{
     overflow-y:scroll;
     height:99%;
     
+}
+
+
+
+/* 深色模式下的网页背景颜色及文本颜色 */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(26,34,40);
+
+    }  
 }
 #leftBlock{
     /* 左区块 */
