@@ -23,14 +23,7 @@ body{
 
 
 
-/* 深色模式下的网页背景颜色及文本颜色 */
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(26,34,40);
-
-    }  
-}
 #leftBlock{
     /* 左区块 */
     background-color:white;
@@ -151,5 +144,19 @@ body{
 }
 #rightImgBox img{
     width:80%
+
+}
+/* 深色模式下的网页背景颜色及文本颜色 */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(26,34,40);
+    }
+    #leftBlock{
+        box-shadow:10px 10px 50px black;
+    }
+    #rightBlock{
+        box-shadow:10px 10px 50px black;
+    }
 
 }
