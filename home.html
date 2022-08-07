@@ -23,12 +23,6 @@
                 background-color: rgb(26,34,40);
 
             }  
-            #title{
-                color:white;
-            }
-            .button{
-                box-shadow:10px 10px 50px black;
-            }
         }
 
 
@@ -56,6 +50,11 @@
                 font-size:xx-large;
                 color:#414141;;
         }
+        @media (prefers-color-scheme: dark) {
+            #title{
+                color:white;
+            }
+        }
         #centerNav{
             /* 中心主体块 */
             visibility:hidden;
@@ -78,10 +77,14 @@
             height:100%;
             backdrop-filter: blur(10px)
         }
+
+
+
         .navSec.button:hover{
             -webkit-animation:scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
 	        animation:scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
         }
+
         .inNavSce1{
             /* 属于一号选项卡的所有按钮 */
             float:left;
@@ -185,14 +188,16 @@
             transform: scale(1.05);
             /* transform:translateY(-10px); */
             cursor:pointer;
+            
         }
-        
+        @media (prefers-color-scheme: dark) {
+            .button{
+                box-shadow:10px 10px 50px black;
+            }
+            
+        }
     </style>
-    <audio 
-    autoplay="autoplay" 
-    <!-- loop="loop"  -->
-    preload="auto"
-    src="./wav/Track1_1.wav">
+    <audio autoplay="autoplay" preload="auto" src="./wav/Track1_1.wav">
     </audio>
 </head>
 <body>
@@ -209,17 +214,17 @@
                 <div class="inNavSce1 button" onClick="window.open('https://space.bilibili.com/513293303','_self')"></div>
                 <div class="inNavSce1 button" onClick="window.open('https://forms.office.com/r/jCHmSt2rzJ','_self')"></div>
                 <div class="inNavSce1">
-                    <div id="qq" class="button" onClick="window.open('https://jq.qq.com/?_wv=1027&k=2SCSDvni','_self')"></div>
-                    <div id="font" class="button" onClick="window.open('https://developer.harmonyos.com/cn/docs/design/des-guides/font-0000001157868583','_self')"></div>
+                    <div id="qq" class="button " onClick="window.open('https://jq.qq.com/?_wv=1027&k=2SCSDvni','_self')"></div>
+                    <div id="font" class="button " onClick="window.open('https://developer.harmonyos.com/cn/docs/design/des-guides/font-0000001157868583','_self')"></div>
                 </div>
             </div>
             <div class="navSec"><!--二号选项卡-->
-                <div class="inNavSce2 button" onClick="window.open('https://forms.office.com/r/W8LUkx6xL5','_self')"></div>
-                <div class="inNavSce2 button" onClick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__hOc_ORUOUdRQkozS0M5RlhPMVNZS1JBRFlCSDZaSC4u','_self')"></div>
+                <div class="inNavSce2 button " onClick="window.open('https://forms.office.com/r/W8LUkx6xL5','_self')"></div>
+                <div class="inNavSce2 button " onClick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__hOc_ORUOUdRQkozS0M5RlhPMVNZS1JBRFlCSDZaSC4u','_self')"></div>
             </div>
             <div class="navSec"><!--三号选项卡-->
                 <div class="inNavSce3 button " onClick="window.open('store.html','_self')"></div>
-                <div class="inNavSce3 button" onClick="window.open('core.html','_self')"></div>
+                <div class="inNavSce3 button " onClick="window.open('core.html','_self')"></div>
             </div>
         </div>
     <script>
