@@ -1,11 +1,4 @@
-/* @font-face {
+@font-face {
     font-family:HarmonyOS_Sans_SC;
     src: url() format('truetype');
-} */
-@font-face {
-    font-family:AMyFont;font-style: normal;font-display: swap;
-    src: url("https://e2662020.rth.app/HarmonyOS_Sans_SC_Regular.ttf") format('truetype')
-}
-*{
-    font-family:AMyFont,'Noto Serif SC', serif !important;
 }
