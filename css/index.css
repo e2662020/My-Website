@@ -70,11 +70,11 @@ body{
 }
 .inNavSce1:nth-child(1){
     /* 一号选项卡的第一个按钮 */
-    background-image:url(https://e2662020.rth.app/bilibili.png);
+    background-image:url(./img/bilibili.png);
 }
 .inNavSce1:nth-child(2){
     /* 一号选项卡的第二个按钮 */
-    background-image:url(https://e2662020.rth.app/register.png);
+    background-image:url(./img/register.png);
     background-position:0 12px;
 }
 .inNavSce1:nth-child(3){
@@ -83,7 +83,7 @@ body{
 }
 #qq{
     /* 一号选项卡的QQ按钮 */
-    background-image:url(https://e2662020.rth.app/addqq.png);
+    background-image:url(./img/addqq.png);
     background-position:bottom;
     
     float:left;
@@ -92,12 +92,12 @@ body{
     
 }
 #qq:hover{
-    background-image:url(https://e2662020.rth.app/qr.png);
+    background-image:url(./img/qr.png);
     animation-duration: 0.2s;
 }
 #font{
     /* 一号选项卡的字体按钮 */
-    background-image:url(https://e2662020.rth.app/fontdownload.png);
+    background-image:url(./img/fontdownload.png);
 
     float:left;
     margin-left:4%;
@@ -113,14 +113,14 @@ body{
 }
 .inNavSce2:first-child{
     /* 二号选项卡的第一个按钮 */
-    background-image:url(https://e2662020.rth.app/feedback.png);
+    background-image:url(./img/feedback.png);
     width:90%;
     height:62%;
 }
 .inNavSce2:nth-child(2){
     /* 二号选项卡的第二个按钮 */
     background-position:0 -10px;
-    background-image:url(https://e2662020.rth.app/joinus.png);
+    background-image:url(./img/joinus.png);
     background-size:100% auto;
     background-repeat:no-repeat;
 
@@ -140,13 +140,13 @@ footer a {
 }
 .inNavSce3:first-child{
     /* 三号选项卡的第一个按钮 */
-    background-image:url(https://e2662020.rth.app/egstore.png);
+    background-image:url(./img/egstore.png);
     width:90%;
     height:46%;
 }
 .inNavSce3:nth-child(2){
     /* 三号选项卡的第二个按钮 */
-    background-image:url(https://e2662020.rth.app/egcore.png);
+    background-image:url(./img/egcore.png);
     width:90%;
     height:46.55%;
 }
