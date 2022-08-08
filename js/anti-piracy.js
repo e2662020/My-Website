@@ -1,3 +1,3 @@
 window.onload = function(){
-    window.location.href= "https://msedge-egstudio.github.io/";
+    window.location.href= "https://e2662020.github.io/My-Website/";
 }
