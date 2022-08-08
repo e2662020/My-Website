@@ -1,0 +1,242 @@
+
+body {
+
+    background-color:rgb(238,244,249);
+
+}
+
+html{
+    height:100%;
+    min-width:600px;
+    min-height:576px;       
+}
+body{
+    /* background-image:linear-gradient(135deg,#63aefe,#FFFFFF); */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:HarmonyOS_Sans_SC;
+
+    overflow:auto;
+    overflow-y:scroll;
+    text-align:center;
+    height:100%;
+}
+#title{
+    /* 主体块标题 */
+        position:relative;
+        top:5%;
+        font-size:xx-large;
+        color:#414141;;
+}
+
+#centerNav{
+    /* 中心主体块 */
+    visibility:hidden;
+    transition:all 0.5s cubic-bezier(0,1,0,1);
+    display:inline-block;
+    position:relative;
+    top:100%;
+    width:800px;
+    height:500px;
+    min-width:1100px;
+}
+.navSec{
+    /* 选项卡 */
+    border-radius:15px;
+    visibility:hidden;
+
+    display:inline-block;
+    margin-left:1%;
+    width:30%;
+    height:100%;
+    backdrop-filter: blur(10px)
+}
+
+
+
+.navSec.button:hover{
+    -webkit-animation:scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+    animation:scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+}
+
+.inNavSce1{
+    /* 属于一号选项卡的所有按钮 */
+    float:left;
+    margin-top:4%;
+    margin-left:5%;
+    width:90%;
+    height:30%;
+    
+}
+.inNavSce1:nth-child(1){
+    /* 一号选项卡的第一个按钮 */
+    background-image:url(https://e2662020.rth.app/bilibili.png);
+}
+.inNavSce1:nth-child(2){
+    /* 一号选项卡的第二个按钮 */
+    background-image:url(https://e2662020.rth.app/register.png);
+    background-position:0 12px;
+}
+.inNavSce1:nth-child(3){
+    /* 一号选项卡的第三个按钮（盒子） */
+    visibility:hidden;
+}
+#qq{
+    /* 一号选项卡的QQ按钮 */
+    background-image:url(https://e2662020.rth.app/addqq.png);
+    background-position:bottom;
+    
+    float:left;
+    width:48%;
+    height:100%;
+    
+}
+#qq:hover{
+    background-image:url(https://e2662020.rth.app/qr.png);
+    animation-duration: 0.2s;
+}
+#font{
+    /* 一号选项卡的字体按钮 */
+    background-image:url(https://e2662020.rth.app/fontdownload.png);
+
+    float:left;
+    margin-left:4%;
+    width:48%;
+    height:100%;
+}
+
+.inNavSce2{
+    /* 属于二号选项卡的所有按钮 */
+    float:left;
+    margin-top:4%;
+    margin-left:5%;
+}
+.inNavSce2:first-child{
+    /* 二号选项卡的第一个按钮 */
+    background-image:url(https://e2662020.rth.app/feedback.png);
+    width:90%;
+    height:62%;
+}
+.inNavSce2:nth-child(2){
+    /* 二号选项卡的第二个按钮 */
+    background-position:0 -10px;
+    background-image:url(https://e2662020.rth.app/joinus.png);
+    background-size:100% auto;
+    background-repeat:no-repeat;
+
+    width:90%;
+    height:30.6%;
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration:none;
+}
+.inNavSce3{
+    /* 属于三号选项卡的所有按钮 */
+    float:left;
+    margin-top:4%;
+    margin-left:5%;
+}
+.inNavSce3:first-child{
+    /* 三号选项卡的第一个按钮 */
+    background-image:url(https://e2662020.rth.app/egstore.png);
+    width:90%;
+    height:46%;
+}
+.inNavSce3:nth-child(2){
+    /* 三号选项卡的第二个按钮 */
+    background-image:url(https://e2662020.rth.app/egcore.png);
+    width:90%;
+    height:46.55%;
+}
+
+.button{
+    /* 所有的按钮 */
+    transition:all 0.2s ease 0s;
+    visibility:visible;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    box-shadow:10px 10px 50px #bebebe93;
+    border-radius:10px;
+    background-color: rgba(255,255,255,0.72);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.button:hover{
+    transform: scale(1.05);
+    /* transform:translateY(-10px); */
+    cursor:pointer;
+    
+}
+.btn-pop{   /* class选择器btn-pop添加样式 */
+    background-color: #ffd475;  /* 设置背景颜色 */
+    border-radius: 10px;    /* 按钮设置个圆角 */
+    border:0px; /* 去掉边框 */
+    zoom:200%;  /* 按钮变大两倍 */
+
+}
+#background-pop{    /* id选择器background-pop添加样式 */
+    display: none;  /* 设置隐藏 */
+    position: fixed;    /* 相对于浏览器窗口的绝对定位，absolute 相对于屏幕 */
+    left: 0;    /* 窗口距离右端 */
+    top: 0; /* 窗口距离顶部 */
+    width: 100%;   /* 宽  100% 填充整个窗口 */
+    height: 100%;   /* 高  */
+    background: rgba(0,0,0,0.3);  /* 设置北京颜色(red,green,blue alpha)  */
+}
+#div-pop{   /* id选择器 */
+    background:rgba(255,255,255,0.5); /* 背景色 */
+    width:30%;  /* 宽 */
+    z-index: 1; /* 设置堆叠顺序，参数大的在前，默认为0 */
+    margin: 12% auto;   /* 外边距 */
+    overflow: auto; /* 超过设置大小固定时，超过时，以滚动条显示 */
+    border-radius: 10px;
+    backdrop-filter: saturate(180%) blur(20px);
+    color: black;
+}
+.div-top{   /* class选择器div-top */
+    width: 100%;    /* 宽 */
+    height: auto;   /* 高 默认高度随内部元素高度变化 */
+    background-color: rgb(255,255,255);
+}
+.div-top div{   /* class选择器div-top 中的div设置样式 */
+    padding: 3px 5px 5px 8px; /* 内边距 ：上 右 下 左， */
+}
+span{   /* span标签添加样式 */
+    color: black;   /* 颜色 */
+    margin-bottom: 10px ;   /* 底部外边距 */
+    margin-left: 20px ; /* 左侧外边距 */
+    cursor: pointer;    /* 鼠标指到此处显示为手行 */
+    float: right;   /* 浮动：靠右 */
+}
+.div-content{   /* class选择器div-content */
+    width: auto;    /* 宽 */
+    height: 200px;  /* 高 固定值 */
+    overflow: auto; /* 加滚动 */
+
+}
+@media (prefers-color-scheme: dark) {
+    .button{
+        box-shadow:10px 10px 50px black;
+    }
+    body {
+        background-color: rgb(26,34,40);
+
+    } 
+    #title{
+        color:white;
+    }
+    footer a{
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .div-top{
+        background-color: rgb(0,0,0);
+    }
+    #div-pop{   /* id选择器 */
+    background:rgba(0,0,0,0.5); 
+    color: white;
+    }
+    span{
+        color:     color: white;;
+    }

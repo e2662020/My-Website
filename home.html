@@ -7,199 +7,16 @@
     <link rel="icon" href="./img/eglogo.ico">
     <link rel="stylesheet" type="text/css" href="./css/font.css">
     <title>MSEDGE</title>
-    <style>
-        /* 常规浅色模式下的网页背景颜色及文本颜色 */
-
-        body {
-
-            background-color:rgb(238,244,249);
-
-        }
-
-        html{
-            height:100%;
-            min-width:600px;
-            min-height:576px;       
-        }
-        body{
-            /* background-image:linear-gradient(135deg,#63aefe,#FFFFFF); */
-            
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family:HarmonyOS_Sans_SC;
-
-            overflow:auto;
-            overflow-y:scroll;
-            text-align:center;
-            height:100%;
-        }
-        #title{
-            /* 主体块标题 */
-                position:relative;
-                top:5%;
-                font-size:xx-large;
-                color:#414141;;
-        }
-
-        #centerNav{
-            /* 中心主体块 */
-            visibility:hidden;
-            transition:all 0.5s cubic-bezier(0,1,0,1);
-            display:inline-block;
-            position:relative;
-            top:100%;
-            width:800px;
-            height:500px;
-            min-width:1100px;
-        }
-        .navSec{
-            /* 选项卡 */
-            border-radius:15px;
-            visibility:hidden;
-
-            display:inline-block;
-            margin-left:1%;
-            width:30%;
-            height:100%;
-            backdrop-filter: blur(10px)
-        }
-
-
-
-        .navSec.button:hover{
-            -webkit-animation:scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
-	        animation:scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
-        }
-
-        .inNavSce1{
-            /* 属于一号选项卡的所有按钮 */
-            float:left;
-            margin-top:4%;
-            margin-left:5%;
-            width:90%;
-            height:30%;
-            
-        }
-        .inNavSce1:nth-child(1){
-            /* 一号选项卡的第一个按钮 */
-            background-image:url(./img/bilibili.png);
-        }
-        .inNavSce1:nth-child(2){
-            /* 一号选项卡的第二个按钮 */
-            background-image:url(./img/register.png);
-            background-position:0 12px;
-        }
-        .inNavSce1:nth-child(3){
-            /* 一号选项卡的第三个按钮（盒子） */
-            visibility:hidden;
-        }
-        #qq{
-            /* 一号选项卡的QQ按钮 */
-            background-image:url(./img/addqq.png);
-            background-position:bottom;
-            
-            float:left;
-            width:48%;
-            height:100%;
-            
-        }
-        #qq:hover{
-            background-image:url(./img/qr.png);
-            animation-duration: 0.2s;
-        }
-        #font{
-            /* 一号选项卡的字体按钮 */
-            background-image:url(./img/fontdownload.png);
-
-            float:left;
-            margin-left:4%;
-            width:48%;
-            height:100%;
-        }
-
-        .inNavSce2{
-            /* 属于二号选项卡的所有按钮 */
-            float:left;
-            margin-top:4%;
-            margin-left:5%;
-        }
-        .inNavSce2:first-child{
-            /* 二号选项卡的第一个按钮 */
-            background-image:url(./img/feedback.png);
-            width:90%;
-            height:62%;
-        }
-        .inNavSce2:nth-child(2){
-            /* 二号选项卡的第二个按钮 */
-            background-position:0 -10px;
-            background-image:url(./img/joinus.png);
-            background-size:100% auto;
-            background-repeat:no-repeat;
-
-            width:90%;
-            height:30.6%;
-        }
-
-        .inNavSce3{
-            /* 属于三号选项卡的所有按钮 */
-            float:left;
-            margin-top:4%;
-            margin-left:5%;
-        }
-        .inNavSce3:first-child{
-            /* 三号选项卡的第一个按钮 */
-            background-image:url(./img/egstore.png);
-            width:90%;
-            height:46%;
-        }
-        .inNavSce3:nth-child(2){
-            /* 三号选项卡的第二个按钮 */
-            background-image:url(./img/egcore.png);
-            width:90%;
-            height:46.55%;
-        }
-
-        .button{
-            /* 所有的按钮 */
-            transition:all 0.2s ease 0s;
-            visibility:visible;
-            background-size:100% auto;
-            background-repeat:no-repeat;
-            box-shadow:10px 10px 50px #bebebe93;
-            border-radius:10px;
-            background-color: rgba(255,255,255,0.72);
-            backdrop-filter: saturate(180%) blur(20px);
-        }
-        .button:hover{
-            transform: scale(1.05);
-            /* transform:translateY(-10px); */
-            cursor:pointer;
-            
-        }
-        @media (prefers-color-scheme: dark) {
-            .button{
-                box-shadow:10px 10px 50px black;
-            }
-            body {
-                background-color: rgb(26,34,40);
-
-            } 
-            #title{
-                color:white;
-            }
-            
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
     <audio autoplay="autoplay" preload="auto" src="./wav/Track1_1.wav">
     </audio>
 </head>
 <body>
     <center>
     <div id="title" style="width: 980px;"><!--标题-->
-        <br/>
+        <br/> 
         <h1 style="margin-top:0px;">MSEDGE第三方代理</h1>
         <div style="margin:0;">下载密码MSEDGE</div>
-        <br/>
     </div>
     </center>
     <div id="centerNav"><!--中心主体块-->
@@ -220,12 +37,50 @@
                 <div class="inNavSce3 button " onClick="window.open('core.html','_self')"></div>
             </div>
         </div>
+        <footer>
+            <br/>
+            <br/>
+            <br/>
+            
+            <center>
+                <pre><a href="https://t.bilibili.com/691232328904605697?spm_id_from=333.999.0.0">官方认证</a>  <a  onclick="show()"href="http://msedge-egstudio.github.io">官方网站</a> <a onclick="show()">相比于官网的变化</a></pre>
+            </center>
+        </footer>
+        <div id="background-pop">
+            <div id="div-pop">
+                <div class="div-top">
+                    <span id="close-button">×&nbsp;&nbsp;</span>
+                    <div>我们相比于官网又什么改变</div>
+                </div>
+                <pre class="div-content">
+1.添加深色模式。
+2.添加毛玻璃（云母/Aero),这会更加美观。
+3.添加音效。
+4.使用CDN自建私人图床（服务来自：热铁盒）。
+5.js跳转反盗版。
+                </pre>
+
+            </div>
+        </div>
     <script>
         function intoAnimal(){
             let oCenterNav = document.getElementById("centerNav");
             oCenterNav.style.top="5%";
         }
         setTimeout("intoAnimal()","100");
+        var div = document.getElementById('background-pop');
+        var close = document.getElementById('close-button');
+        function show(){
+            div.style.display = "block";
+        }
+        close.onclick = function close() {
+            div.style.display = "none";
+        }
+        window.onclick = function close(e) {
+            if (e.target == div) {
+                div.style.display = "none";
+            }
+        }
     </script>
     <script type="text/javascript" src="./js/anti-piracy.js"></script>
 </body>
