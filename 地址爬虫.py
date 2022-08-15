@@ -5,6 +5,7 @@ logging.basicConfig(filename='logger.log', level=logging.INFO)
 n1 = []
 n2 = []
 info("程序正常运行中")
+print("程序正常运行中")
 try:    
     while True:
         response = requests.get("https://msedge-core.github.io/index.html")
@@ -29,5 +30,6 @@ try:
         info("成功完成，等待10秒下一个")
 except:
     error("程序错误")
+    print("程序错误")
 
         
